@@ -10,7 +10,7 @@ source:
   sha256: 438c91a917cc8aa19e82c6f59f8714da353c488584a007d401efac8368e1c785
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage('sfml', max_pin='x.x') }}
@@ -37,6 +37,7 @@ requirements:
     - xorg-libxfixes                 # [linux]
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
+    - libudev-devel-cos6-x86_64      # [linux]
     - libogg
     - freetype
     - libflac
@@ -45,6 +46,7 @@ requirements:
   run:
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
+    - libudev-devel-cos6-x86_64      # [linux]
     - libogg
     - freetype
     - libflac
