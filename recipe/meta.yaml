@@ -10,7 +10,7 @@ source:
   sha256: 438c91a917cc8aa19e82c6f59f8714da353c488584a007d401efac8368e1c785
 
 build:
-  number: 2
+  number: 3
   skip: True  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage('sfml', max_pin='x.x') }}

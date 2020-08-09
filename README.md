@@ -5,7 +5,7 @@ Home: https://github.com/SFML/SFML
 
 Package license: zlib/libpng
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple and Fast Multimedia Library
 
