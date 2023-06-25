@@ -1,5 +1,5 @@
 {% set name = "sfml" %}
-{% set version = "2.5.1" %}
+{% set version = "2.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/SFML/SFML/archive/{{ version }}.tar.gz
-  sha256: 438c91a917cc8aa19e82c6f59f8714da353c488584a007d401efac8368e1c785
+  sha256: 0c3f84898ea1db07dc46fa92e85038d8c449e3c8653fe09997383173de96bc06
 
 build:
-  number: 2
-  skip: True  # [win and vc<14]
+  number: 0
+  skip: true  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage('sfml', max_pin='x.x') }}
 
@@ -86,7 +86,7 @@ about:
   home: https://github.com/SFML/SFML
   license: zlib/libpng
   license_file: license.md
-  summary: 'Simple and Fast Multimedia Library'
+  summary: Simple and Fast Multimedia Library
   description: |
     SFML is a simple, fast, cross-platform and object-oriented multimedia
     API. It  provides access to windowing, graphics, audio and network. It
