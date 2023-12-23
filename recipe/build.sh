@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cmake -G Ninja                                    \
+cmake ${CMAKE_ARGS} -G Ninja                                    \
       -D CMAKE_BUILD_TYPE=Release                 \
       -D CMAKE_INSTALL_PREFIX=$PREFIX             \
       -D UDEV_PATH_INCLUDES=$PREFIX/include       \
