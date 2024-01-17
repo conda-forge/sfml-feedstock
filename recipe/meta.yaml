@@ -8,6 +8,9 @@ package:
 source:
   url: https://github.com/SFML/SFML/archive/{{ version }}.tar.gz
   sha256: 438c91a917cc8aa19e82c6f59f8714da353c488584a007d401efac8368e1c785
+  patches:
+    - 0001-Allow-osx-arm64.patch
+    - 0001-Install-misc-files-into-prefix.patch
 
 build:
   number: 2

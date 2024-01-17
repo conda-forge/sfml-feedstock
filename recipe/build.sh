@@ -1,6 +1,14 @@
 #!/bin/bash
 
-cmake ${CMAKE_ARGS} -G Ninja                                    \
+mkdir -p build
+pushd build
+
+if [[ "${target_platform}" == "osx-arm64" ]]; then
+    export CMAKE_ARGS="${CMAKE_ARGS} -DCMAKE_OSX_ARCHITECTURES=arm64"
+    export CXXFLAGS="${CXXFLAGS} -std=c++11"
+fi
+
+cmake ${CMAKE_ARGS} -G Ninja                      \
       -D CMAKE_BUILD_TYPE=Release                 \
       -D CMAKE_INSTALL_PREFIX=$PREFIX             \
       -D UDEV_PATH_INCLUDES=$PREFIX/include       \
