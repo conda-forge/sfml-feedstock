@@ -1,0 +1,37 @@
+From b12a46a3d4e6d026032937b7d079ee3c844dcbf8 Mon Sep 17 00:00:00 2001
+From: "Uwe L. Korn" <uwe.korn@quantco.com>
+Date: Wed, 17 Jan 2024 21:15:26 +0100
+Subject: [PATCH] Allow osx-arm64
+
+---
+ CMakeLists.txt | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e821a49..36a9868 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -252,11 +252,6 @@ if(SFML_OS_MACOSX)
+         endif()
+     endif()
+ 
+-    # only the default architecture (i.e. 64-bit) is supported
+-    if(NOT CMAKE_OSX_ARCHITECTURES STREQUAL "x86_64")
+-        message(FATAL_ERROR "Only 64-bit architecture is supported")
+-    endif()
+-
+     # configure Xcode templates
+     set(XCODE_TEMPLATES_ARCH "\$(NATIVE_ARCH_ACTUAL)")
+ endif()
+@@ -489,7 +484,7 @@ elseif(SFML_OS_IOS)
+         endif()
+ 
+         if(SFML_BUILD_AUDIO)
+-            install(FILES extlibs/libs-ios/libflac.a 
++            install(FILES extlibs/libs-ios/libflac.a
+                           extlibs/libs-ios/libvorbis.a
+                           extlibs/libs-ios/libogg.a
+                           DESTINATION lib)
+-- 
+2.39.3 (Apple Git-145)
+
