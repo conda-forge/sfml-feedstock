@@ -5,6 +5,8 @@ pushd build
 
 if [[ "${target_platform}" == "osx-arm64" ]]; then
     export CMAKE_ARGS="${CMAKE_ARGS} -DCMAKE_OSX_ARCHITECTURES=arm64"
+fi
+if [[ "${target_platform}" == osx-* ]]; then
     export CXXFLAGS="${CXXFLAGS} -std=c++11"
 fi
 
