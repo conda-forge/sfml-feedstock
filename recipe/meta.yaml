@@ -1,5 +1,5 @@
 {% set name = "sfml" %}
-{% set version = "2.5.1" %}
+{% set version = "2.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/SFML/SFML/archive/{{ version }}.tar.gz
-  sha256: 438c91a917cc8aa19e82c6f59f8714da353c488584a007d401efac8368e1c785
+  sha256: 82535db9e57105d4f3a8aedabd138631defaedc593cab589c924b7d7a11ffb9d
   patches:
     - 0001-Allow-osx-arm64.patch
     - 0001-Install-misc-files-into-prefix.patch
 
 build:
-  number: 2
-  skip: True  # [win and vc<14]
+  number: 0
+  skip: true  # [win and vc<14]
   run_exports:
     - {{ pin_subpackage('sfml', max_pin='x.x') }}
 
