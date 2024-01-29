@@ -47,10 +47,9 @@ requirements:
     - libvorbis
     - openal-soft
   run:
-    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
-    - xorg-libx11                                             # [linux]
-    - xorg-libxrandr                                          # [linux]
-    - xorg-libxcursor                                         # [linux]
+    - xorg-libx11                    # [linux]
+    - xorg-libxrandr                 # [linux]
+    - xorg-libxcursor                # [linux]
     - libogg
     - freetype
     - libflac
