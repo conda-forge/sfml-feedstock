@@ -89,7 +89,7 @@ test:
 
 about:
   home: https://github.com/SFML/SFML
-  license: zlib/libpng
+  license: Zlib
   license_file: license.md
   summary: 'Simple and Fast Multimedia Library'
   description: |
