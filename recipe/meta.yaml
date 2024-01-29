@@ -28,6 +28,7 @@ requirements:
     - {{ cdt('libudev-devel') }}     # [linux]
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
+    - xorg-libxcursor                # [linux]
     - libogg
     - freetype
     - libflac
@@ -39,6 +40,7 @@ requirements:
     - xorg-libxfixes                 # [linux]
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
+    - xorg-libxcursor                # [linux]
     - libogg
     - freetype
     - libflac
@@ -47,6 +49,7 @@ requirements:
   run:
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
+    - xorg-libxcursor                # [linux]
     - libogg
     - freetype
     - libflac
