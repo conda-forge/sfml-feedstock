@@ -9,7 +9,6 @@ source:
   url: https://github.com/SFML/SFML/archive/{{ version }}.tar.gz
   sha256: 82535db9e57105d4f3a8aedabd138631defaedc593cab589c924b7d7a11ffb9d
   patches:
-    - 0001-Allow-osx-arm64.patch
     - 0001-Install-misc-files-into-prefix.patch
 
 build:
