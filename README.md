@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sfml-feedstock/
 
 Home: https://github.com/SFML/SFML
 
-Package license: zlib/libpng
+Package license: Zlib
 
 Summary: Simple and Fast Multimedia Library
 
