@@ -1,28 +1,16 @@
-From 0b0e45135826a66be5eb8cb2c66afe3414140c67 Mon Sep 17 00:00:00 2001
-From: "Uwe L. Korn" <uwe.korn@quantco.com>
-Date: Wed, 17 Jan 2024 21:19:19 +0100
-Subject: [PATCH] Install misc files into prefix
-
----
- CMakeLists.txt | 4 +---
- 1 file changed, 1 insertion(+), 3 deletions(-)
-
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 36a9868..b69906c 100644
+index fc9a268e..e8304fe2 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -140,10 +140,8 @@ endif()
+@@ -150,10 +150,8 @@ endif()
  # For miscellaneous files
  if(SFML_OS_WINDOWS OR SFML_OS_IOS)
      set(DEFAULT_INSTALL_MISC_DIR .)
--elseif(SFML_OS_LINUX OR SFML_OS_FREEBSD OR SFML_OS_OPENBSD)
-+elseif(SFML_OS_LINUX OR SFML_OS_FREEBSD OR SFML_OS_OPENBSD OR SFML_OS_MACOSX)
+-elseif(SFML_OS_LINUX OR SFML_OS_FREEBSD OR SFML_OS_OPENBSD OR SFML_OS_NETBSD)
++elseif(SFML_OS_LINUX OR SFML_OS_FREEBSD OR SFML_OS_OPENBSD OR SFML_OS_NETBSD OR SFML_OS_MACOSX)
      set(DEFAULT_INSTALL_MISC_DIR share/SFML)
 -elseif(SFML_OS_MACOSX)
 -    set(DEFAULT_INSTALL_MISC_DIR /usr/local/share/SFML)
  elseif(SFML_OS_ANDROID)
      set(DEFAULT_INSTALL_MISC_DIR ${CMAKE_ANDROID_NDK}/sources/third_party/sfml)
  endif()
--- 
-2.39.3 (Apple Git-145)
-
