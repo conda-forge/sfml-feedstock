@@ -46,6 +46,7 @@ requirements:
     - libflac
     - libvorbis
     - openal-soft
+    - libudev
   run:
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
