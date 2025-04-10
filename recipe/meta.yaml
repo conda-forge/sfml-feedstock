@@ -26,6 +26,7 @@ requirements:
     - {{ cdt('libselinux') }}        # [linux]
     - {{ cdt('libxdamage') }}        # [linux]
     - {{ cdt('libxxf86vm') }}        # [linux]
+    - {{ cdt('libx11-devel') }}      # [linux]
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
