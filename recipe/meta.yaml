@@ -31,7 +31,6 @@ requirements:
     - libogg
     - libflac
     - libvorbis
-    - libtiff
     - openal-soft
     - cmake
     - ninja
@@ -45,8 +44,7 @@ requirements:
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
     - libogg
-    - libtiff
-    - libfreetype
+    - freetype
     - libflac
     - libvorbis
     - openal-soft
@@ -56,7 +54,6 @@ requirements:
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
     - libogg
-    - libtiff
     - libfreetype
     - libflac
     - libvorbis
