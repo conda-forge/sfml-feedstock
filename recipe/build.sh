@@ -4,10 +4,10 @@ mkdir -p build
 pushd build
 
 if [[ "${target_platform}" == "osx-arm64" ]]; then
-    export CMAKE_ARGS="${CMAKE_ARGS} -DCMAKE_OSX_ARCHITECTURES=arm64 -DOPENAL_FULL_PATH:FILEPATH='${PREFIX}/lib/libopenal.dylib'"
+    export CMAKE_ARGS="${CMAKE_ARGS} -DCMAKE_OSX_ARCHITECTURES=arm64"
 fi
 if [[ "${target_platform}" == osx-* ]]; then
-    export CXXFLAGS="${CXXFLAGS} -std=c++11"
+    export CXXFLAGS="${CXXFLAGS} -std=c++11 -DOPENAL_FULL_PATH:FILEPATH='${PREFIX}/lib/libopenal.dylib'"
 fi
 
 cmake ${CMAKE_ARGS} -G Ninja                      \
