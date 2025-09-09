@@ -41,6 +41,7 @@ requirements:
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
+    - xorg-libxi                     # [linux]
     - libogg
     - freetype
     - libflac
