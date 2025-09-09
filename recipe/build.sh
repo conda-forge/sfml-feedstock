@@ -8,11 +8,13 @@ if [[ "${target_platform}" == "osx-arm64" ]]; then
 fi
 if [[ "${target_platform}" == osx-* ]]; then
     export CXXFLAGS="${CXXFLAGS} -std=c++11"
+    export CMAKE_ARGS="${CMAKE_ARGS}  -DOPENAL_FULL_PATH:FILEPATH='${PREFIX}/lib/libopenal.dylib'"
 fi
 
 cmake ${CMAKE_ARGS} -G Ninja                      \
       -D CMAKE_BUILD_TYPE=Release                 \
       -D CMAKE_INSTALL_PREFIX=$PREFIX             \
+      -D CMAKE_PREFIX_PATH=$PREFIX                \
       -D UDEV_PATH_INCLUDES=$PREFIX/include       \
       -D UDEV_PATH_LIB=$PREFIX/lib                \
       -D CMAKE_INSTALL_LIBDIR=lib                 \
