@@ -7,7 +7,7 @@ if [[ "${target_platform}" == "osx-arm64" ]]; then
     export CMAKE_ARGS="${CMAKE_ARGS} -DCMAKE_OSX_ARCHITECTURES=arm64"
 fi
 if [[ "${target_platform}" == osx-* ]]; then
-    export CXXFLAGS="${CXXFLAGS} -std=c++11"
+    export CXXFLAGS="${CXXFLAGS} -std=c++11 -D_LIBCPP_DISABLE_AVAILABILITY"
     export CMAKE_ARGS="${CMAKE_ARGS}  -DOPENAL_FULL_PATH:FILEPATH='${PREFIX}/lib/libopenal.dylib'"
 fi
 
