@@ -20,6 +20,10 @@ cxx_compiler_version:
 - '18'
 freetype:
 - '2'
+libflac:
+- '1.5'
+libogg:
+- '1.3'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 target_platform:
