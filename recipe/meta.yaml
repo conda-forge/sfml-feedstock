@@ -24,8 +24,6 @@ requirements:
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
-    - libgl-devel                    # [linux]
-    - libopengl-devel                # [linux]
     - libogg
     - libflac
     - libvorbis
@@ -42,6 +40,8 @@ requirements:
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
     - xorg-libxi                     # [linux]
+    - libgl-devel                    # [linux]
+    - libopengl-devel                # [linux]
     - libogg
     - freetype
     - libflac
