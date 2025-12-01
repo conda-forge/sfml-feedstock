@@ -25,6 +25,7 @@ requirements:
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
     - libgl-devel                    # [linux]
+    - libopengl-devel                # [linux]
     - libogg
     - libflac
     - libvorbis
