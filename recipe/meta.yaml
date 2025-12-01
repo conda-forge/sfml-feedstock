@@ -19,12 +19,12 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}        # [linux]
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
+    - libgl-devel                    # [linux]
     - libogg
     - libflac
     - libvorbis
