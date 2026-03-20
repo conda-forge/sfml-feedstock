@@ -10,7 +10,7 @@ source:
   sha256: 0034e05f95509e5d3fb81b1625713e06da7b068f210288ce3fd67106f8f46995
 
 build:
-  number: 1
+  number: 2
   run_exports:
     - {{ pin_subpackage('sfml', max_pin='x.x') }}
 
@@ -19,8 +19,6 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ compiler('c') }}
     - {{ stdlib("c") }}
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}        # [linux]
     - xorg-libx11                    # [linux]
     - xorg-libxrandr                 # [linux]
     - xorg-libxcursor                # [linux]
