@@ -1,5 +1,5 @@
 {% set name = "sfml" %}
-{% set version = "3.0.2" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/SFML/SFML/archive/{{ version }}.tar.gz
-  sha256: 0034e05f95509e5d3fb81b1625713e06da7b068f210288ce3fd67106f8f46995
+  sha256: 91209a112c2bd0bc6f4ce0d5f3e413cfb48b57c0de59f5507dc81f71b1ad7a5c
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage('sfml', max_pin='x.x') }}
 
